@@ -1,5 +1,5 @@
 {
-  "$schema": "./node_modules/@angular/service-worker/config/schema.json",
+  "$schema": "",
   "index": "/index.html",
   "assetGroups": [
     {
