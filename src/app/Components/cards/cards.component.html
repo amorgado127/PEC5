@@ -1,0 +1,9 @@
+<div class="container">
+    <h1>Cartas Magic: The Gathering</h1>
+    <ul class="list-group">
+        <a *ngFor="let magicCard of magicCards" [routerLink]="['/card',magicCard.id]"
+            class="list-group-item list-group-item-action animate__animated animate_bounce animate__fadeIn">
+            {{magicCard.printed_name}} - {{magicCard.printed_type_line}}
+        </a>
+    </ul>
+</div>

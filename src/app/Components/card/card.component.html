@@ -1,0 +1,19 @@
+<div class="container mt-5">
+
+    <div *ngIf="magicCard" class="row animate__animated animate__bounce animate__fadeIn">
+        <div class="col-mde-9">
+            <p><strong>Nombre:</strong> {{magicCard.printed_name}}</p>
+            <p><strong>Tipo:</strong> {{magicCard.printed_type_line}}</p>
+            <p><strong>Set:</strong> {{magicCard.set_name}}</p>
+            <p><strong>Descripción:</strong> {{magicCard.printed_text}}</p>
+            <img style="width:488px; height:680px" class="rounded" src="{{magicCard.image_uris.normal}}" alt="">
+        </div>
+        <div class="col-md-3">
+            <a class="btn btn-danger" routerLink="/">Back</a>
+        </div>
+
+    </div>
+
+
+
+</div>
