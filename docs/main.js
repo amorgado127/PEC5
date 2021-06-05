@@ -319,14 +319,11 @@ class CardComponent {
     }
     ngOnInit() {
         const identifier = this.activatedRoute.snapshot.paramMap.get('id');
-        console.log('Identifier--> ', identifier);
         this.magicService.getMagicCard(identifier).subscribe((card) => {
             if (!card) {
                 return this.router.navigateByUrl('/');
             }
-            console.log(card);
             this.magicCard = card;
-            console.log(this.magicCard);
         });
     }
 }
